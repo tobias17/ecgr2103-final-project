@@ -44,6 +44,7 @@ public:
     GameBoard(int iSize);
     bool getHitAndMark(int iX, int iY);
     string getBoardToString();
+    int getSize() { return miSize; };
     enum Difficulty { easy = 5, medium, hard };
 private:
     int miSize;
