@@ -29,15 +29,15 @@ int main(int argc, char** argv) {
 
     GameBoard oBoard(GameBoard::easy);
     
-    cout << oBoard.getBoardToString();
-    
-    cout << boolToString(oBoard.getHitAndMark(0, 0)) << endl;
-    cout << boolToString(oBoard.getHitAndMark(1, 1)) << endl;
-    cout << boolToString(oBoard.getHitAndMark(2, 2)) << endl;
-    cout << boolToString(oBoard.getHitAndMark(3, 3)) << endl;
-    cout << boolToString(oBoard.getHitAndMark(4, 4)) << endl;
-    
-    cout << oBoard.getBoardToString();
+//    cout << oBoard.getBoardToString();
+//    
+//    cout << boolToString(oBoard.getHitAndMark(0, 0)) << endl;
+//    cout << boolToString(oBoard.getHitAndMark(1, 1)) << endl;
+//    cout << boolToString(oBoard.getHitAndMark(2, 2)) << endl;
+//    cout << boolToString(oBoard.getHitAndMark(3, 3)) << endl;
+//    cout << boolToString(oBoard.getHitAndMark(4, 4)) << endl;
+//    
+//    cout << oBoard.getBoardToString();
     
     return 0;
 }

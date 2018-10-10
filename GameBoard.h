@@ -28,7 +28,7 @@
 
 using namespace std;
 
-const int ShipSizes[SHIP_AMNT] = { 4, 3, 2 };
+const int iaShipSizes[SHIP_AMNT] = { 4, 3, 2 };
 
 class Point {
 public:
@@ -50,6 +50,7 @@ private:
     int miSize;
     bool mbaShips[MAX_BOARD_SIZE][MAX_BOARD_SIZE];
     bool mbaAttacked[MAX_BOARD_SIZE][MAX_BOARD_SIZE];
+    int getPossibleLayouts(int iShipDepth);
 };
 
 #endif /* GAMEBOARD_H */
