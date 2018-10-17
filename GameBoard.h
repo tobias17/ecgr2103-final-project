@@ -32,7 +32,7 @@ const int ShipSizes[SHIP_AMNT] = { 4, 3, 2 };
 
 class Point {
 public:
-    Point(int iX, int iY, int iDir) { x = iX; y = iY; dir = iDir; };
+    Point(int aX, int aY, int aDir) { x = aX; y = aY; dir = aDir; };
     int x;
     int y;
     int dir;
@@ -41,15 +41,16 @@ public:
 
 class GameBoard {
 public:
-    GameBoard(int iSize);
-    bool getHitAndMark(int iX, int iY);
+    GameBoard(int aSize);
+    bool getHitAndMark(int aX, int aY);
     string getBoardToString();
-    int getSize() { return miSize; };
+    int getSize() { return size; };
+    bool getIsGameOver();
     enum Difficulty { easy = 5, medium, hard };
 private:
-    int miSize;
-    bool mbaShips[MAX_BOARD_SIZE][MAX_BOARD_SIZE];
-    bool mbaAttacked[MAX_BOARD_SIZE][MAX_BOARD_SIZE];
+    int size;
+    bool ships[MAX_BOARD_SIZE][MAX_BOARD_SIZE];
+    bool attacked[MAX_BOARD_SIZE][MAX_BOARD_SIZE];
 };
 
 #endif /* GAMEBOARD_H */
